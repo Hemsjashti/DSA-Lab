@@ -4,7 +4,7 @@
 
 A collection of **Data Structures and Algorithms laboratory programs implemented in Python** as part of the **23CSE203 – Data Structures and Algorithms** course.
 
-This repository contains programs practiced and documented across **7 lab weeks**, including recursion, searching, sorting, linked lists, stacks, queues, and circular queues. The laboratory work also includes explanations, sample outputs, debugging, and errors encountered during implementation.
+This repository contains programs practiced and documented across **9 lab weeks**, covering recursion, searching, sorting, linked lists, stacks, queues, circular queues, binary trees, and binary search trees. The laboratory work includes program code, sample outputs, explanations, and error tables.
 
 ---
 
@@ -440,6 +440,117 @@ rear.next = front
 
 This allows the last node to point back to the first node.
 
+
+---
+
+# Week 8 — Binary Tree Using Array and Linked List
+
+This week focuses on implementing a binary tree using two representations: an array and a linked list.
+
+## 8A. Binary Tree Using an Array
+
+The program stores the nodes of a binary tree in an array. With zero-based indexing, the children of a node at index `i` are calculated as follows:
+
+- Left child index: `2 * i + 1`
+- Right child index: `2 * i + 2`
+- Parent index: `(i - 1) // 2`
+
+Operations include:
+
+- Insert the root node
+- Insert a left child
+- Insert a right child
+- Display the array representation
+- Perform preorder traversal
+
+The array has a fixed capacity in this implementation, so the calculated index must be checked before inserting a child.
+
+## 8B. Binary Tree Using a Linked List
+
+The linked-list representation creates each node as an object containing data and references to its left and right children.
+
+Operations include:
+
+- Create the root node
+- Insert a left child
+- Insert a right child
+- Perform preorder traversal
+- Perform inorder traversal
+- Perform postorder traversal
+
+### Tree Traversals
+
+- **Preorder:** Root → Left → Right
+- **Inorder:** Left → Root → Right
+- **Postorder:** Left → Right → Root
+
+Example tree:
+
+```text
+        1
+       / \
+      2   3
+     / \
+    4   5
+```
+
+```text
+Preorder:  1 2 4 5 3
+Inorder:   4 2 5 1 3
+Postorder: 4 5 2 3 1
+```
+
+### Common Errors
+
+- `IndexError`: The calculated child index exceeds the array size. Increase the array size or validate the index.
+- Parent does not exist: Insert the parent node before inserting its child.
+- Root already exists: Use the existing root instead of inserting another root.
+- Left or right child already exists: Select an empty child position or add replacement logic.
+- Incorrect traversal output: Follow the required traversal order.
+
+---
+
+# Week 9 — Binary Search Tree (BST)
+
+This week focuses on implementing a Binary Search Tree and its operations and traversals.
+
+A Binary Search Tree is a binary tree in which smaller values are placed in the left subtree and larger values are placed in the right subtree. The program uses a `Node` class to store data and references to the left and right children.
+
+## 9A. Binary Search Tree Operations and Traversals
+
+Operations include:
+
+- Create a node
+- Insert an element into the correct position
+- Search for a specified element
+- Perform inorder traversal
+- Perform preorder traversal
+- Perform postorder traversal
+
+### Traversals
+
+- **Inorder:** Left → Root → Right. For a BST, this displays values in ascending order.
+- **Preorder:** Root → Left → Right.
+- **Postorder:** Left → Right → Root.
+
+Example values inserted: `50, 30, 70, 20, 40, 60, 80`.
+
+```text
+Inorder:   20 30 40 50 60 70 80
+Preorder:  50 30 20 40 70 60 80
+Postorder: 20 40 30 60 80 70 50
+```
+
+### Common Errors
+
+- `RecursionError`: An unbalanced tree can cause deep recursion. A balanced BST or iterative methods can help.
+- Element not found: Check the inserted values and the search key.
+- Incorrect traversal output: Follow the correct traversal sequence.
+- Duplicate element ignored: The current program ignores duplicates; add duplicate-handling logic if required.
+- `AttributeError`: Check that a node reference is not `None` before accessing its attributes.
+
+---
+
 ---
 
 # 🧠 Concepts Covered
@@ -462,6 +573,10 @@ This allows the last node to point back to the first node.
 * Stack
 * Queue
 * Circular Queue
+* Binary Tree Using Array
+* Binary Tree Using Linked List
+* Binary Search Tree (BST)
+* Preorder, Inorder, and Postorder Traversals
 * Classes and Objects
 * Nodes and Pointers/References
 * Menu-driven Programs
@@ -522,6 +637,9 @@ Common errors include:
 | Infinite Loop     | Incorrect linked-list traversal condition                    |
 | Incorrect Sorting | Wrong comparison or swapping condition                       |
 | Pointer Error     | Incorrect `front`, `rear`, `head`, `tail`, or `top` handling |
+| Tree Index Error  | Calculated child index exceeds array capacity                |
+| BST Search Failure| Search key is not present in the tree                        |
+| Incorrect Traversal | Wrong order of visiting tree nodes                         |
 
 These errors were identified and corrected during the implementation and testing of the programs.
 
@@ -606,9 +724,14 @@ lab_dsa/
 │   ├── 6A
 │   └── 6B
 │
-└── Week-7/
-    ├── 7A
-    └── 7B
+├── Week-7/
+│   ├── 7A
+│   └── 7B
+├── Week-8/
+│   ├── 8A
+│   └── 8B
+└── Week-9/
+    └── 9A
 ```
 
 ---
@@ -633,6 +756,9 @@ By completing these laboratory programs, the following concepts are practiced:
 14. Handling user input
 15. Debugging Python programs
 16. Understanding program execution and output
+17. Implementing binary trees using arrays and linked lists
+18. Implementing a Binary Search Tree
+19. Performing preorder, inorder, and postorder traversals
 
 ---
 
