@@ -1,785 +1,1066 @@
-# Data Structures and Algorithms Lab
+# DATA STRUCTURES AND ALGORITHMS LAB
+## 23CSE203 | Python Implementations
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python) ![Course](https://img.shields.io/badge/Course-23CSE203-orange) ![Status](https://img.shields.io/badge/Status-Lab%20Work-success)
 
-A collection of **Data Structures and Algorithms laboratory programs implemented in Python** as part of the **23CSE203 – Data Structures and Algorithms** course.
+<p align="center">
+  <strong>Amrita Vishwa Vidyapeetham</strong><br>
+  School of Computing
+</p>
 
-This repository contains programs practiced and documented across **9 lab weeks**, covering recursion, searching, sorting, linked lists, stacks, queues, circular queues, binary trees, and binary search trees. The laboratory work includes program code, sample outputs, explanations, and error tables.
-
----
-
-## 👨‍🎓 Student Details
-
-| **Details**         | **Information**                |
-| ------------------- | ------------------------------ |
-| **Name**            | JASHTI HEMENDRA                |
-| **Roll No.**        | AV.SC.U4CSE25116               |
-| **Year / Semester** | 2nd Year / 3rd Semester        |
-| **Section**         | CSE-B                          |
-| **Course**          | Data Structures and Algorithms |
-| **Course Code**     | 23CSE203                       |
-| **Credits**         | 5                              |
-| **Department**      | School of Computing            |
-| **Faculty**         | Dr. Raj Kumar Batchu           |
+<p align="center">
+  <strong>2nd Year | Semester 3 | CSE-B</strong>
+</p>
 
 ---
 
-## 📚 Lab Contents
+## 1. About the Repository
 
-### Week 1 — Recursion
+Welcome to the **Data Structures and Algorithms Lab (23CSE203)** repository.
 
-The first week focuses on understanding recursion and recursive function calls.
+This repository contains the practical implementations of various Data Structures and Algorithms concepts using Python, completed as part of the Semester 3 laboratory coursework at Amrita Vishwa Vidyapeetham.
 
-Programs include:
+The repository covers fundamental programming concepts, recursive problem-solving, searching and sorting algorithms, linear data structures, non-linear data structures, tree operations, and hashing techniques.
 
-#### 1A. Recursive Countdown
+Each experiment focuses on understanding the working principles of an algorithm or data structure through Python programming. The implementations include user input, logical operations, menu-driven programs, output demonstrations, explanations, and error handling wherever documented in the laboratory manual.
 
-A recursive Python program to display a countdown from `n` to `1`, followed by `"launch"`.
+The primary objective of this repository is to develop a strong foundation in data structures, understand how algorithms operate internally, and improve logical thinking and problem-solving skills through practical implementation.
 
-#### 1B. Recursive Compound Growth Factor
+## 2. Student Information
 
-A recursive program for calculating the compound growth factor.
-
-#### 1C. Recursive Employee ID Search
-
-A recursive program to search for an employee ID in a list.
-
-#### 1D. Recursive Factorial Calculation
-
-A recursive program to calculate factorial values.
-
-#### 1E. Recursive Fibonacci Series
-
-A recursive program to generate the Fibonacci series.
-
-The recursion exercises also document common errors such as incorrect recursive calls and `RecursionError`.
+| Field | Details |
+|---|---|
+| Student Name | JASHTI HEMENDRA |
+| Roll Number | AV.SC.U4CSE25116 |
+| Course Code | 23CSE203 |
+| Course Name | Data Structures and Algorithms |
+| Academic Year | 2nd Year |
+| Semester | Semester 3 |
+| Section | CSE-B |
+| Credits | 5 |
+| Faculty | Dr. Rajkumar Batchu |
+| Department | School of Computing |
+| Institution | Amrita Vishwa Vidyapeetham |
 
 ---
 
-## Week 2 — Searching
+## 3. Technologies and Tools
 
-The second week focuses on searching techniques.
+The following technologies and development tools are used throughout the laboratory exercises.
 
-### 2A. Linear Search
+| Technology / Tool | Purpose |
+|---|---|
+| Python 3 | Primary programming language |
+| Visual Studio Code | Code development and execution |
+| Python Interpreter | Running Python programs |
+| Git | Version control |
+| GitHub | Source code hosting and documentation |
 
-The program searches for a given element by checking the elements of the array one by one.
+### Programming Concepts Used
 
-Features:
-
-* Takes array size and elements from the user
-* Accepts a search key
-* Searches each element sequentially
-* Returns the position/index when the element is found
-* Indicates when the element is not found
-
-### 2B. Binary Search — Sorted Array
-
-The program performs binary search on a sorted array.
-
-The algorithm uses:
-
-* Left boundary
-* Right boundary
-* Middle position
-
-The search space is repeatedly reduced until the element is found or the search ends.
-
-### 2C. Binary Search — Unsorted Array
-
-The program accepts an unsorted array and sorts it before applying binary search.
-
-Steps include:
-
-1. Take the input array
-2. Check the array
-3. Sort the array when required
-4. Perform binary search
-5. Display the result
+- Functions and recursion
+- Classes and objects
+- Constructors
+- Conditional statements
+- Loops and iterations
+- Lists and arrays
+- References and pointers
+- Node-based implementations
+- Searching and sorting techniques
+- Tree traversal algorithms
+- Hash functions and collision resolution
 
 ---
 
-# Week 3 — Sorting
+# 4. Experiments and Implementations
 
-The third week focuses on fundamental sorting algorithms.
+The laboratory manual contains 11 weekly experiments covering different areas of Data Structures and Algorithms.
 
-## 3A. Bubble Sort
+## WEEK 1 – RECURSION
 
-Bubble Sort repeatedly compares adjacent elements and swaps them when they are in the wrong order.
+**Topics:** Recursive Functions and Base Conditions
 
-Example:
+This experiment focuses on solving problems using recursion. A recursive function calls itself with a smaller or modified input until it reaches a base condition.
 
-```text
-Input:
-1 15 23 12 5
+### Programs Implemented
 
-Output:
-[1, 5, 12, 15, 23]
-```
+**1. Countdown Using Recursion**
+- Accept a number from the user.
+- Display the countdown from n to 1.
+- Print "Launch" after the countdown.
+- Use a base condition to terminate recursive calls.
 
-The process is repeated until the elements are arranged in ascending order.
+**2. Power Calculation Using Recursion**
+- Accept a principal growth factor and number of years.
+- Calculate the power using recursive multiplication.
+- Use n = 0 as the base condition.
+- Return the final value of Pⁿ.
 
----
+**3. Employee ID Searching**
+- Accept employee IDs as a list.
+- Search for a given employee ID recursively.
+- Compare the current element with the target ID.
+- Move to the next index if the element does not match.
+- Return True if found and False otherwise.
 
-## 3B. Insertion Sort
+**4. Factorial Using Recursion**
+- Accept a number from the user.
+- Calculate its factorial using recursive multiplication.
+- Handle negative numbers.
+- Use 0! = 1 as the base condition.
 
-Insertion Sort considers the first element as sorted and inserts each subsequent element into its correct position.
+**5. Fibonacci Series Using Recursion**
+- Generate the first n terms of the Fibonacci series.
+- Use two base conditions: n = 0 and n = 1.
+- Calculate the next term using the sum of the previous two terms.
 
-Example:
-
-```text
-Input:
-1 5 2 9 3
-
-Output:
-[1, 2, 3, 5, 9]
-```
-
----
-
-## 3C. Selection Sort
-
-Selection Sort finds the smallest element from the unsorted portion and places it at the current position.
-
-Example:
-
-```text
-Input:
-1 10 8
-
-Output:
-[1, 8, 10]
-```
+**Key Concepts Learned:**
+- Recursive function calls
+- Base conditions
+- Recursive conditions
+- Call stack
+- Returning values
+- Termination of recursive execution
 
 ---
 
-## 3D. Merge Sort
+## WEEK 2 – SEARCHING ALGORITHMS
 
-Merge Sort uses a divide-and-conquer approach.
+**Topics:** Linear Search and Binary Search
 
-The array is:
+This experiment focuses on locating a specific element in a collection of data using different searching techniques.
 
-1. Divided into smaller parts
-2. Recursively sorted
-3. Merged into a sorted array
+### Programs Implemented
 
----
+**1. Linear Search**
 
-## 3E. Quick Sort
+Linear Search checks every element sequentially until the required element is found.
 
-Quick Sort uses a pivot and partitioning technique.
+Implementation:
+- Accept the number of elements.
+- Read array elements from the user.
+- Accept the target element.
+- Traverse the array from the first index.
+- Compare every element with the target.
+- Return the index if found.
+- Return -1 if the element is not present.
 
-The program:
+**2. Binary Search on a Sorted Array**
 
-1. Selects a pivot
-2. Partitions the array
-3. Sorts the left part
-4. Sorts the right part recursively
+Binary Search repeatedly divides the search interval into two halves.
 
----
+Implementation:
+- Initialize `low = 0`.
+- Initialize `high = len(arr) - 1`.
+- Calculate the middle index.
+- Compare the middle element with the target.
+- Search the left half if the target is smaller.
+- Search the right half if the target is greater.
+- Stop when the element is found or the search interval becomes empty.
 
-# Week 4 — Linked Lists
+**3. Binary Search with Unsorted Input**
 
-The fourth week focuses on linked-list data structures and their operations.
+This program demonstrates how binary search can be performed when the user initially enters an unsorted array.
 
-## 4A. Singly Linked List
+Implementation:
+- Accept an unsorted array.
+- Accept the search element.
+- Sort the array using `arr.sort()`.
+- Display the sorted array.
+- Perform binary search on the sorted array.
+- Display the position of the element or indicate that it is not found.
 
-The program implements a singly linked list with menu-driven operations.
+**Key Concepts Learned:**
+- Sequential searching
+- Divide-and-conquer approach
+- Array indexing
+- Low, high and middle pointers
+- Sorted and unsorted data
+- Search termination conditions
 
-Operations include:
+### Complexity Reference
 
-* Create a linked list
-* Insert at beginning
-* Insert at end
-* Insert at specific index
-* Delete by value
-* Delete at beginning
-* Delete at the end
-* Count number of nodes
-* Display / Traverse
-* Exit
-
----
-
-## 4B. Doubly Linked List
-
-The program implements a doubly linked list where each node maintains references to both the previous and next nodes.
-
-Operations include:
-
-* Create a linked list
-* Insert at beginning
-* Insert at end
-* Insert at specific index
-* Delete by value
-* Delete at beginning
-* Delete at end
-* Count number of nodes
-* Display / Traverse
-* Exit
+| Algorithm | Best Case | Average Case | Worst Case |
+|---|---:|---:|---:|
+| Linear Search | O(1) | O(n) | O(n) |
+| Binary Search | O(1) | O(log n) | O(log n) |
 
 ---
 
-## 4C. Circular Linked List
+## WEEK 3 – SORTING ALGORITHMS
 
-The program implements a circular singly linked list.
+**Topics:** Elementary and Advanced Sorting
 
-In a circular linked list, the last node points back to the first node.
+This experiment introduces different sorting techniques used to arrange elements in ascending order.
 
-The important connection maintained is:
+### Programs Implemented
 
-```python
-tail.next = head
-```
+**1. Bubble Sort**
 
-Operations include:
+Bubble Sort repeatedly compares adjacent elements and swaps them if they are in the wrong order.
 
-* Create a linked list
-* Insert at beginning
-* Insert at end
-* Insert at specific index
-* Delete by value
-* Delete at beginning
-* Delete at end
-* Count number of nodes
-* Display / Traverse
-* Exit
+Implementation:
+- Accept array elements.
+- Use an outer loop to control the passes.
+- Use an inner loop to compare adjacent elements.
+- Swap elements when the left element is greater.
+- Repeat until the array is sorted.
 
----
+**2. Insertion Sort**
 
-# Week 5 — Stack
+Insertion Sort builds a sorted portion of the array by inserting each element into its correct position.
 
-The fifth week focuses on implementing stacks.
+Implementation:
+- Consider the first element as sorted.
+- Select the next element as the key.
+- Compare the key with the previous elements.
+- Shift larger elements one position to the right.
+- Insert the key into its correct position.
 
-## 5A. Stack Using Array
+**3. Selection Sort**
 
-The stack is implemented using a Python list.
+Selection Sort repeatedly finds the smallest element from the unsorted portion and places it in the correct position.
 
-Operations include:
+Implementation:
+- Select the current position.
+- Assume the current element is the minimum.
+- Compare it with the remaining elements.
+- Update the minimum index when a smaller element is found.
+- Swap the minimum element with the current element.
 
-* Push
-* Pop
-* Peek
-* Display
+**4. Merge Sort**
 
-The stack follows the **LIFO (Last In, First Out)** principle.
+Merge Sort follows the divide-and-conquer technique.
 
-### Basic operations
+Implementation:
+- Check whether the array contains zero or one element.
+- Divide the array into left and right halves.
+- Recursively sort both halves.
+- Compare elements from both sorted halves.
+- Merge them into the original array.
+- Copy any remaining elements.
 
-```python
-stack.append(10)
-```
+**5. Quick Sort**
 
-Pushes an element into the stack.
+Quick Sort uses a pivot element to partition an array.
 
-```python
-stack.pop()
-```
+Implementation:
+- Select the last element as the pivot.
+- Compare the remaining elements with the pivot.
+- Move smaller elements towards the left.
+- Place the pivot in its correct position.
+- Recursively sort the left and right partitions.
 
-Removes the top element.
+### Complexity Reference
 
-```python
-stack[-1]
-```
+| Algorithm | Best Case | Average Case | Worst Case |
+|---|---:|---:|---:|
+| Bubble Sort | O(n) | O(n²) | O(n²) |
+| Selection Sort | O(n²) | O(n²) | O(n²) |
+| Insertion Sort | O(n) | O(n²) | O(n²) |
+| Merge Sort | O(n log n) | O(n log n) | O(n log n) |
+| Quick Sort | O(n log n) | O(n log n) | O(n²) |
 
-Accesses the top element.
-
----
-
-## 5B. Stack Using Linked List
-
-The stack is implemented using nodes and a `top` pointer.
-
-Operations include:
-
-* Push
-* Pop
-* Peek
-* Display
-* Count
-
-The `top` pointer represents the top element of the stack.
-
----
-
-# Week 6 — Stack Using Array and Linked List
-
-This week implements stack operations using both an array and a linked list.
-
-### Operations
-
-* Push
-* Pop
-* Peek
-* Display
-
-### Stack using Array
-
-The array/list implementation uses a list to store elements and performs stack operations using list functions.
-
-### Stack using Linked List
-
-The linked-list implementation uses:
-
-* `Node`
-* `top`
-* `next`
-
-The push operation adds a new node at the top, while pop removes the top node.
-
-The programs also handle conditions such as:
-
-* Stack Overflow
-* Stack Underflow
-* Empty Stack
+**Key Concepts Learned:**
+- Comparison-based sorting
+- Swapping and shifting
+- Divide and conquer
+- Pivot selection
+- Partitioning
+- Recursive sorting
+- Time complexity comparison
 
 ---
 
-# Week 7 — Queue
+## WEEK 4 – LINKED LISTS
 
-The seventh week focuses on queue implementations.
+**Topics:** Singly Linked List, Doubly Linked List and Circular Linked List
 
-## 7A. Queue Using Array and Linked List
+This experiment focuses on implementing linked lists using classes and nodes.
 
-The program implements a Queue using both:
+### A. Singly Linked List (SLL)
 
-* Array
-* Linked List
+A Singly Linked List consists of nodes where each node contains data and a reference to the next node.
 
-A main menu is provided to select the implementation.
+**Node Structure:**
 
-### Operations
+`[Data | Next] → [Data | Next] → None`
 
-* Enqueue
-* Dequeue
-* Peek
-* Display
+**Operations Implemented:**
+1. Create a linked list.
+2. Insert at the beginning.
+3. Insert at the end.
+4. Insert at a specific index.
+5. Delete by value.
+6. Delete at the beginning.
+7. Delete at the end.
+8. Count the number of nodes.
+9. Display or traverse the list.
+10. Exit the program.
 
-The queue follows the **FIFO (First In, First Out)** principle.
+**Important Concepts:**
+- Node creation
+- Head and tail references
+- Next pointer
+- Traversal
+- Insertion and deletion
+- Updating node references
 
-### Array Queue
+### B. Doubly Linked List (DLL)
 
-The queue uses a Python list to store elements.
+A Doubly Linked List contains references to both the previous and next nodes.
 
-Example:
+**Node Structure:**
 
-```python
-queue.append(10)
-```
+`None ← [Prev | Data | Next] ⇄ [Prev | Data | Next] → None`
 
-Enqueues an element.
+**Operations Implemented:**
+1. Create a linked list.
+2. Insert at the beginning.
+3. Insert at the end.
+4. Insert at a specific index.
+5. Delete by value.
+6. Delete at the beginning.
+7. Delete at the end.
+8. Count the number of nodes.
+9. Display or traverse the list.
+10. Exit the program.
 
-```python
-queue.pop(0)
-```
+**Important Concepts:**
+- Previous and next references
+- Head and tail management
+- Forward traversal
+- Backward traversal
+- Updating both links during insertion and deletion
 
-Dequeues an element.
+### C. Circular Linked List (CLL)
 
-### Linked List Queue
+A Circular Linked List is a linked list in which the last node points back to the first node.
 
-The linked-list implementation uses:
+**Node Structure:**
 
-* `front`
-* `rear`
-* `Node`
+`HEAD → Node → Node → Node → TAIL`
+`  ↑___________________________|`
 
-The element is inserted at the rear and removed from the front.
+**Operations Implemented:**
+1. Create a circular linked list.
+2. Insert at the beginning.
+3. Insert at the end.
+4. Insert at a specific index.
+5. Delete by value.
+6. Delete at the beginning.
+7. Delete at the end.
+8. Count the number of nodes.
+9. Display or traverse the list.
+10. Display head and tail.
+11. Exit the program.
 
----
+**Important Concepts:**
+- Circular connections
+- Tail-to-head linking
+- Head and tail updates
+- Circular traversal
+- Avoiding infinite loops
 
-## 7B. Circular Queue Using Array and Linked List
-
-The program implements a Circular Queue using:
-
-* Array
-* Linked List
-
-A main menu is provided to select the implementation.
-
-### Operations
-
-* Enqueue
-* Dequeue
-* Peek
-* Display
-
-### Circular Queue Using Array
-
-The array implementation uses `front` and `rear` positions.
-
-Circular movement is performed using:
-
-```python
-rear = (rear + 1) % size
-```
-
-and:
-
-```python
-front = (front + 1) % size
-```
-
-The full condition is:
-
-```python
-(rear + 1) % size == front
-```
-
-The empty condition is:
-
-```python
-front == -1
-```
-
-### Circular Queue Using Linked List
-
-The linked-list implementation maintains a circular connection:
-
-```python
-rear.next = front
-```
-
-This allows the last node to point back to the first node.
-
+**Key Learning Outcomes:**
+- Understanding dynamic data structures
+- Creating nodes using Python classes
+- Managing references
+- Performing insertion and deletion
+- Comparing different linked list structures
 
 ---
 
-# Week 8 — Binary Tree Using Array and Linked List
+## WEEK 5 – STACK USING ARRAYS AND LINKED LISTS
 
-This week focuses on implementing a binary tree using two representations: an array and a linked list.
+**Topics:** Stack Data Structure and LIFO Principle
 
-## 8A. Binary Tree Using an Array
+A Stack is a linear data structure that follows the **LIFO (Last In, First Out)** principle.
 
-The program stores the nodes of a binary tree in an array. With zero-based indexing, the children of a node at index `i` are calculated as follows:
+The last inserted element is the first element removed.
 
-- Left child index: `2 * i + 1`
-- Right child index: `2 * i + 2`
-- Parent index: `(i - 1) // 2`
+### A. Stack Using Arrays
 
-Operations include:
+Implementation uses a Python list to store stack elements.
 
-- Insert the root node
-- Insert a left child
-- Insert a right child
-- Display the array representation
-- Perform preorder traversal
+**Operations:**
 
-The array has a fixed capacity in this implementation, so the calculated index must be checked before inserting a child.
+| Operation | Description |
+|---|---|
+| Push | Inserts an element at the top |
+| Pop | Removes the top element |
+| Peek | Displays the top element without removing it |
+| Display | Displays all stack elements |
+| Count | Returns the number of elements |
 
-## 8B. Binary Tree Using a Linked List
+**Important Conditions:**
+- Stack Overflow: Occurs when the stack reaches its maximum capacity.
+- Stack Underflow: Occurs when pop is performed on an empty stack.
 
-The linked-list representation creates each node as an object containing data and references to its left and right children.
+### B. Stack Using Linked Lists
 
-Operations include:
+Implementation uses nodes to store stack elements.
 
-- Create the root node
-- Insert a left child
-- Insert a right child
-- Perform preorder traversal
-- Perform inorder traversal
-- Perform postorder traversal
+**Node Structure:**
 
-### Tree Traversals
+`TOP → [Data | Next] → [Data | Next] → None`
 
-- **Preorder:** Root → Left → Right
-- **Inorder:** Left → Root → Right
-- **Postorder:** Left → Right → Root
+**Operations:**
+- Push using a new node.
+- Pop by updating the top reference.
+- Peek using the top node.
+- Display through linked list traversal.
+- Count by traversing all nodes.
 
-Example tree:
-
-```text
-        1
-       / \
-      2   3
-     / \
-    4   5
-```
-
-```text
-Preorder:  1 2 4 5 3
-Inorder:   4 2 5 1 3
-Postorder: 4 5 2 3 1
-```
-
-### Common Errors
-
-- `IndexError`: The calculated child index exceeds the array size. Increase the array size or validate the index.
-- Parent does not exist: Insert the parent node before inserting its child.
-- Root already exists: Use the existing root instead of inserting another root.
-- Left or right child already exists: Select an empty child position or add replacement logic.
-- Incorrect traversal output: Follow the required traversal order.
+**Key Concepts Learned:**
+- LIFO principle
+- Top pointer
+- Push and pop operations
+- Stack overflow and underflow
+- Array-based and linked-list-based implementations
 
 ---
 
-# Week 9 — Binary Search Tree (BST)
+## WEEK 6 – STACK OPERATIONS USING DIFFERENT IMPLEMENTATIONS
 
-This week focuses on implementing a Binary Search Tree and its operations and traversals.
+**Topics:** Menu-Driven Stack Implementation
 
-A Binary Search Tree is a binary tree in which smaller values are placed in the left subtree and larger values are placed in the right subtree. The program uses a `Node` class to store data and references to the left and right children.
+This experiment implements stack operations using both arrays and linked lists through a menu-driven Python program.
 
-## 9A. Binary Search Tree Operations and Traversals
+### A. Stack Using Array
 
-Operations include:
+- Create an empty stack.
+- Define the maximum stack size.
+- Insert elements using Push.
+- Remove elements using Pop.
+- Display the top element using Peek.
+- Display all stack elements.
+- Check overflow and underflow.
+- Continue operations until Exit is selected.
 
-- Create a node
-- Insert an element into the correct position
-- Search for a specified element
-- Perform inorder traversal
-- Perform preorder traversal
-- Perform postorder traversal
+### B. Stack Using Linked List
 
-### Traversals
+- Create a Node class.
+- Initialize the top reference.
+- Insert nodes at the top.
+- Remove the top node.
+- Access the top element.
+- Traverse and display all elements.
+- Handle empty stack conditions.
 
-- **Inorder:** Left → Root → Right. For a BST, this displays values in ascending order.
-- **Preorder:** Root → Left → Right.
-- **Postorder:** Left → Right → Root.
-
-Example values inserted: `50, 30, 70, 20, 40, 60, 80`.
-
-```text
-Inorder:   20 30 40 50 60 70 80
-Preorder:  50 30 20 40 70 60 80
-Postorder: 20 40 30 60 80 70 50
-```
-
-### Common Errors
-
-- `RecursionError`: An unbalanced tree can cause deep recursion. A balanced BST or iterative methods can help.
-- Element not found: Check the inserted values and the search key.
-- Incorrect traversal output: Follow the correct traversal sequence.
-- Duplicate element ignored: The current program ignores duplicates; add duplicate-handling logic if required.
-- `AttributeError`: Check that a node reference is not `None` before accessing its attributes.
+**Key Concepts Learned:**
+- Stack implementation using different storage structures
+- Menu-driven programming
+- Class-based implementation
+- Pointer/reference handling
+- Input validation
+- Stack operation management
 
 ---
 
----
+## WEEK 7 – QUEUES AND CIRCULAR QUEUES
 
-# 🧠 Concepts Covered
+**Topics:** FIFO Data Structure
 
-* Python Programming
-* Functions
-* Recursion
-* Arrays
-* Python Lists
-* Linear Search
-* Binary Search
-* Bubble Sort
-* Insertion Sort
-* Selection Sort
-* Merge Sort
-* Quick Sort
-* Singly Linked List
-* Doubly Linked List
-* Circular Linked List
-* Stack
-* Queue
-* Circular Queue
-* Binary Tree Using Array
-* Binary Tree Using Linked List
-* Binary Search Tree (BST)
-* Preorder, Inorder, and Postorder Traversals
-* Classes and Objects
-* Nodes and Pointers/References
-* Menu-driven Programs
-* User Input Handling
-* Algorithm Implementation
-* Debugging
-* Error Handling
+A Queue is a linear data structure that follows the **FIFO (First In, First Out)** principle.
 
----
+The first inserted element is the first element removed.
 
-# 🔄 Data Structure Principles
+### A. Queue Using Array
 
-## Stack
+A Python list is used to store queue elements.
 
-**LIFO — Last In, First Out**
+**Operations:**
+- Enqueue – Insert an element at the rear.
+- Dequeue – Remove an element from the front.
+- Peek – Display the front element.
+- Display – Show all queue elements.
 
-```text
-Push → Add element
-Pop  → Remove top element
-Peek → View top element
-```
+### B. Queue Using Linked List
 
-## Queue
+A linked list is used to implement the queue.
 
-**FIFO — First In, First Out**
+**Important References:**
+- Front – Points to the first node.
+- Rear – Points to the last node.
 
-```text
-Enqueue → Add at rear
-Dequeue → Remove from front
-Peek    → View front element
-```
+**Operations:**
+- Insert a node at the rear.
+- Remove a node from the front.
+- Display the front element.
+- Traverse and display the queue.
 
-## Circular Queue
+### C. Circular Queue Using Array
 
-A circular queue allows the queue to reuse available positions by connecting the end back to the beginning.
+A Circular Queue connects the last array position back to the first position.
 
----
+**Important Formulas:**
 
-# 🐛 Errors & Debugging
+Circular movement of rear:
 
-The laboratory work also documents errors encountered during program implementation and their corrections.
+`rear = (rear + 1) % size`
 
-Common errors include:
+Circular movement of front:
 
-| **Error**         | **Cause / Problem**                                          |
-| ----------------- | ------------------------------------------------------------ |
-| `SyntaxError`     | Incorrect Python syntax                                      |
-| `TypeError`       | Incorrect data type or operation                             |
-| `ValueError`      | Invalid input value                                          |
-| `IndexError`      | Invalid list/array index                                     |
-| `AttributeError`  | Incorrect attribute or method                                |
-| `NameError`       | Variable or object was not defined                           |
-| `RecursionError`  | Incorrect or infinite recursion                              |
-| Stack Underflow   | Pop performed on an empty stack                              |
-| Stack Overflow    | Inserting beyond the stack limit                             |
-| Queue Empty       | Dequeue/Peek performed before insertion                      |
-| Queue Full        | Circular queue has no available space                        |
-| Infinite Loop     | Incorrect linked-list traversal condition                    |
-| Incorrect Sorting | Wrong comparison or swapping condition                       |
-| Pointer Error     | Incorrect `front`, `rear`, `head`, `tail`, or `top` handling |
-| Tree Index Error  | Calculated child index exceeds array capacity                |
-| BST Search Failure| Search key is not present in the tree                        |
-| Incorrect Traversal | Wrong order of visiting tree nodes                         |
+`front = (front + 1) % size`
 
-These errors were identified and corrected during the implementation and testing of the programs.
+Queue Full Condition:
+
+`(rear + 1) % size == front`
+
+Queue Empty Condition:
+
+`front == -1`
+
+### D. Circular Queue Using Linked List
+
+A linked list is used to implement a circular queue.
+
+**Important Connection:**
+
+`rear.next = front`
+
+**Operations:**
+- Enqueue
+- Dequeue
+- Peek
+- Display
+- Circular traversal
+
+**Key Concepts Learned:**
+- FIFO principle
+- Front and rear pointers
+- Circular indexing
+- Memory reuse
+- Queue overflow and underflow
+- Circular linked connections
 
 ---
 
-# 🛠️ Technologies Used
+## WEEK 8 – BINARY TREES
 
-* **Python 3**
-* Python Lists
-* Functions
-* Loops
-* Conditional Statements
-* Recursion
-* Classes and Objects
-* Linked Lists
-* Stack
-* Queue
-* Circular Queue
+**Topics:** Binary Tree Implementation Using Arrays and Linked Lists
+
+A Binary Tree is a non-linear data structure in which each node can have at most two children: a left child and a right child.
+
+### A. Binary Tree Using Array
+
+The tree is represented using an array.
+
+**Index Relationships:**
+
+For a node at index `i`:
+
+- Root: Index 0
+- Left Child: `2*i + 1`
+- Right Child: `2*i + 2`
+- Parent: `(i - 1) // 2`
+
+**Operations Documented:**
+- Insertion
+- Display
+- Preorder traversal
+
+### B. Binary Tree Using Linked List
+
+Each node contains:
+- Data
+- Left child reference
+- Right child reference
+
+**Operations Documented:**
+- Node creation
+- Insertion
+- Preorder traversal
+- Inorder traversal
+- Postorder traversal
+
+**Traversal Techniques:**
+
+| Traversal | Visiting Order |
+|---|---|
+| Preorder | Root → Left → Right |
+| Inorder | Left → Root → Right |
+| Postorder | Left → Right → Root |
+
+**Key Concepts Learned:**
+- Tree nodes
+- Root and child relationships
+- Array representation
+- Linked representation
+- Tree traversal algorithms
 
 ---
 
-# ▶️ How to Run
+## WEEK 9 – BINARY SEARCH TREES (BST)
 
-## 1. Clone the Repository
+**Topics:** Binary Search Tree Operations and Traversals
+
+A Binary Search Tree is a binary tree in which smaller values are stored in the left subtree and larger values are stored in the right subtree.
+
+### Operations and Concepts
+
+**1. Node Creation**
+- Create a node using a class.
+- Store the data.
+- Maintain left and right references.
+
+**2. Insertion**
+- Compare the new value with the root.
+- Move left for smaller values.
+- Move right for larger values.
+- Insert at an empty position.
+
+**3. Searching**
+- Compare the search key with the current node.
+- Move towards the left or right subtree.
+- Stop when the element is found or the node becomes None.
+
+**4. Tree Traversals**
+
+- Inorder: Left → Root → Right.
+- Preorder: Root → Left → Right.
+- Postorder: Left → Right → Root.
+
+**Important Observation:**
+
+Inorder traversal of a Binary Search Tree displays the elements in ascending order.
+
+**Key Concepts Learned:**
+- Binary Search Tree properties
+- Recursive insertion
+- Searching in trees
+- Tree traversal
+- Node references
+- Handling missing elements
+
+---
+
+## WEEK 10 – AVL TREES
+
+**Topics:** Self-Balancing Binary Search Trees
+
+An AVL Tree is a self-balancing Binary Search Tree. It maintains balance after insertion and deletion operations using rotations.
+
+### Operations Implemented
+
+**1. Node Creation**
+- Store the key.
+- Maintain left and right references.
+- Initialize node height.
+
+**2. Height Calculation**
+- Calculate the height of a node.
+- Return 0 for an empty node.
+
+**3. Balance Factor**
+
+`Balance Factor = Height(Left Subtree) - Height(Right Subtree)`
+
+**4. Rotations**
+
+Four balancing cases are implemented:
+
+| Case | Rotation |
+|---|---|
+| LL – Left Left | Right Rotation |
+| RR – Right Right | Left Rotation |
+| LR – Left Right | Left Rotation followed by Right Rotation |
+| RL – Right Left | Right Rotation followed by Left Rotation |
+
+**5. Insertion**
+- Insert the key using BST rules.
+- Update the height.
+- Calculate the balance factor.
+- Apply the appropriate rotation when required.
+
+**6. Deletion**
+- Search for the required key.
+- Handle nodes with zero, one or two children.
+- Replace a two-child node using its inorder successor.
+- Update heights.
+- Rebalance the tree.
+
+**7. Searching**
+- Search using BST comparison rules.
+
+**8. Minimum and Maximum**
+- Minimum: Move to the leftmost node.
+- Maximum: Move to the rightmost node.
+
+**9. Traversal Operations**
+- Inorder
+- Preorder
+- Postorder
+- Level-order
+
+**10. Additional Operations**
+- Calculate tree height.
+- Display the tree structure.
+- Handle duplicate values.
+- Validate user input.
+- Exit using a menu-driven interface.
+
+**Key Concepts Learned:**
+- Self-balancing trees
+- Height calculation
+- Balance factors
+- LL, RR, LR and RL rotations
+- AVL insertion and deletion
+- Tree searching and traversal
+
+---
+
+## WEEK 11 – HASHING
+
+**Topics:** Hash Tables and Collision Resolution Techniques
+
+Hashing is a technique used to map keys to specific positions in a hash table using a hash function.
+
+The experiment demonstrates three different collision resolution techniques.
+
+### Hash Function
+
+The hash table size is initialized as:
+
+`size = 10`
+
+The hash index is calculated using:
+
+`index = key % size`
+
+### A. Separate Chaining
+
+Separate Chaining resolves collisions by maintaining a list at each hash table index.
+
+**Implementation:**
+- Create a hash table containing empty lists.
+- Calculate the index for each key.
+- Insert the key into the corresponding list.
+- Store multiple keys at the same index when collisions occur.
+
+### B. Linear Probing
+
+Linear Probing resolves collisions by checking the next available position.
+
+**Formula:**
+
+`new_index = (index + 1) % size`
+
+**Implementation:**
+- Create an empty hash table.
+- Calculate the hash index.
+- Check whether the position is occupied.
+- If occupied, move to the next position.
+- Insert the key into the first available position.
+
+### C. Quadratic Probing
+
+Quadratic Probing resolves collisions by checking positions using square increments.
+
+**Formula:**
+
+`new_index = (index + i * i) % size`
+
+**Implementation:**
+- Calculate the initial hash index.
+- Initialize the counter `i = 0`.
+- Calculate the next position using quadratic increments.
+- Check whether the position is empty.
+- Insert the key when an empty position is found.
+- Increase the counter when a collision occurs.
+
+### Comparison
+
+| Technique | Collision Resolution |
+|---|---|
+| Separate Chaining | Stores colliding elements in a list |
+| Linear Probing | Checks the next available position |
+| Quadratic Probing | Checks positions using square increments |
+
+**Key Concepts Learned:**
+- Hash functions
+- Hash tables
+- Hash index calculation
+- Collision detection
+- Separate chaining
+- Linear probing
+- Quadratic probing
+- Modulo-based indexing
+
+---
+
+# 5. Experiment Index and Manual Page References
+
+The following references correspond to the printed page numbers in the laboratory manual.
+
+| No. | Experiment | Manual Pages |
+|---:|---|---:|
+| 01 | Recursion | 4–12 |
+| 02 | Searching Algorithms | 13–18 |
+| 03 | Sorting Algorithms | 19–32 |
+| 04 | Linked Lists | 33–63 |
+| 05 | Stack Using Arrays and Linked Lists | 64–72 |
+| 06 | Stack Operations | 73–76 |
+| 07 | Queues and Circular Queues | 77–93 |
+| 08 | Binary Trees | 94–96 |
+| 09 | Binary Search Trees | 97–98 |
+| 10 | AVL Trees | 99–119 |
+| 11 | Hashing | 120–123 |
+
+---
+
+# 6. How to Run the Programs
+
+Follow these steps to execute the programs locally.
+
+### Prerequisites
+
+Install the following:
+
+- Python 3
+- Visual Studio Code (recommended)
+- Python extension for VS Code
+
+### Step 1 – Clone the Repository
+
+Open the terminal and execute:
 
 ```bash
-git clone <your-repository-url>
+git clone <YOUR-REPOSITORY-URL>
 ```
 
-## 2. Navigate to the Repository
+### Step 2 – Navigate to the Project Directory
 
 ```bash
-cd lab_dsa
+cd DSA-LAB
 ```
 
-## 3. Run a Python Program
+### Step 3 – Open the Project in VS Code
+
+```bash
+code .
+```
+
+### Step 4 – Select an Experiment
+
+Navigate to the required weekly experiment folder and open the Python file.
+
+### Step 5 – Execute the Program
 
 ```bash
 python filename.py
 ```
 
-Replace `filename.py` with the required program file.
+On some systems, use:
 
----
-
-# 📁 Repository Structure
-
-```text
-lab_dsa/
-│
-├── README.md
-│
-├── Week-1/
-│   ├── 1A
-│   ├── 1B
-│   ├── 1C
-│   ├── 1D
-│   └── 1E
-│
-├── Week-2/
-│   ├── 2A
-│   ├── 2B
-│   └── 2C
-│
-├── Week-3/
-│   ├── 3A
-│   ├── 3B
-│   ├── 3C
-│   ├── 3D
-│   └── 3E
-│
-├── Week-4/
-│   ├── 4A
-│   ├── 4B
-│   └── 4C
-│
-├── Week-5/
-│   ├── 5A
-│   └── 5B
-│
-├── Week-6/
-│   ├── 6A
-│   └── 6B
-│
-├── Week-7/
-│   ├── 7A
-│   └── 7B
-├── Week-8/
-│   ├── 8A
-│   └── 8B
-└── Week-9/
-    └── 9A
+```bash
+python3 filename.py
 ```
 
----
+### Step 6 – Provide Input
 
-# 🎯 Learning Objectives
+Enter the values requested by the program in the terminal.
 
-By completing these laboratory programs, the following concepts are practiced:
-
-1. Understanding recursive problem solving
-2. Implementing searching algorithms
-3. Implementing sorting algorithms
-4. Understanding linked-list structures
-5. Implementing singly linked lists
-6. Implementing doubly linked lists
-7. Implementing circular linked lists
-8. Implementing stacks using arrays
-9. Implementing stacks using linked lists
-10. Implementing queues using arrays
-11. Implementing queues using linked lists
-12. Implementing circular queues
-13. Understanding LIFO and FIFO principles
-14. Handling user input
-15. Debugging Python programs
-16. Understanding program execution and output
-17. Implementing binary trees using arrays and linked lists
-18. Implementing a Binary Search Tree
-19. Performing preorder, inorder, and postorder traversals
+The program will execute the selected algorithm or data structure operations and display the result.
 
 ---
 
-# 📖 Course Information
+# 7. Suggested Repository Structure
 
-**Course:** Data Structures and Algorithms
-**Course Code:** 23CSE203
-**Credits:** 5
-**Department:** School of Computing
-**Institution:** Amrita Vishwa Vidyapeetham
+The following is a recommended folder organization for maintaining the programs.
+
+```text
+DSA-LAB/
+│
+├── Week-01-Recursion/
+│   ├── countdown.py
+│   ├── power.py
+│   ├── employee_search.py
+│   ├── factorial.py
+│   └── fibonacci.py
+│
+├── Week-02-Searching/
+│   ├── linear_search.py
+│   ├── binary_search.py
+│   └── binary_search_unsorted.py
+│
+├── Week-03-Sorting/
+│   ├── bubble_sort.py
+│   ├── insertion_sort.py
+│   ├── selection_sort.py
+│   ├── merge_sort.py
+│   └── quick_sort.py
+│
+├── Week-04-Linked-Lists/
+│   ├── singly_linked_list.py
+│   ├── doubly_linked_list.py
+│   └── circular_linked_list.py
+│
+├── Week-05-Stack/
+│   ├── stack_array.py
+│   └── stack_linked_list.py
+│
+├── Week-06-Stack-Operations/
+│   ├── stack_array.py
+│   └── stack_linked_list.py
+│
+├── Week-07-Queues/
+│   ├── queue_array_linked_list.py
+│   └── circular_queue.py
+│
+├── Week-08-Binary-Trees/
+│   ├── binary_tree_array.py
+│   └── binary_tree_linked_list.py
+│
+├── Week-09-Binary-Search-Tree/
+│   └── binary_search_tree.py
+│
+├── Week-10-AVL-Tree/
+│   └── avl_tree.py
+│
+├── Week-11-Hashing/
+│   └── hashing.py
+│
+└── README.md
+```
+
+*Note: This is a suggested structure. The actual filenames and folder names should match the files uploaded to the repository.*
 
 ---
 
-# 👤 Author
+# 8. Important Data Structures Covered
+
+| Data Structure | Category | Principle / Property |
+|---|---|---|
+| Array | Linear | Indexed storage |
+| Singly Linked List | Linear | One-way node connection |
+| Doubly Linked List | Linear | Two-way node connection |
+| Circular Linked List | Linear | Last node connects to first |
+| Stack | Linear | LIFO |
+| Queue | Linear | FIFO |
+| Circular Queue | Linear | Circular indexing |
+| Binary Tree | Non-linear | Maximum two children |
+| Binary Search Tree | Non-linear | Ordered tree structure |
+| AVL Tree | Non-linear | Self-balancing BST |
+| Hash Table | Hash-based | Key-to-index mapping |
+
+---
+
+# 9. Important Algorithmic Concepts
+
+The following concepts are demonstrated throughout the experiments.
+
+### Recursion
+Solving a problem by repeatedly calling the same function with modified input.
+
+### Searching
+Finding the location of a required element in a collection.
+
+### Sorting
+Arranging data in a specified order.
+
+### Divide and Conquer
+Breaking a problem into smaller subproblems, solving them and combining their results.
+
+### Dynamic Node Linking
+Connecting nodes using references instead of storing all elements in consecutive memory locations.
+
+### LIFO
+Last In, First Out – the principle followed by stacks.
+
+### FIFO
+First In, First Out – the principle followed by queues.
+
+### Tree Traversal
+Visiting every node in a tree using a specific order.
+
+### Balancing
+Maintaining the height balance of a tree to improve searching and updating operations.
+
+### Hashing
+Converting keys into hash table indices and resolving collisions when multiple keys map to the same position.
+
+---
+
+# 10. Learning Outcomes
+
+After completing these laboratory experiments, I gained practical exposure to the following:
+
+1. Understanding fundamental and advanced data structures.
+2. Implementing recursive algorithms using Python functions.
+3. Applying searching algorithms to locate elements.
+4. Implementing different sorting techniques and comparing their complexities.
+5. Creating and manipulating singly, doubly and circular linked lists.
+6. Implementing stacks using arrays and linked lists.
+7. Understanding queue operations and circular queue implementations.
+8. Representing binary trees using arrays and linked lists.
+9. Implementing Binary Search Trees and different traversal methods.
+10. Understanding AVL tree balancing and rotation operations.
+11. Implementing hashing techniques and collision resolution.
+12. Handling common programming errors and debugging logical conditions.
+13. Improving algorithmic thinking and problem-solving skills.
+
+---
+
+# 11. Error Handling and Debugging
+
+During the laboratory exercises, different programming errors and logical issues were identified and rectified.
+
+Some important examples include:
+
+| Error / Issue | Rectification |
+|---|---|
+| RecursionError | Use appropriate base conditions |
+| IndexError | Check array and list boundaries |
+| Infinite Loop | Update traversal variables correctly |
+| Stack Underflow | Check whether the stack is empty |
+| Queue Underflow | Check whether the queue is empty |
+| Incorrect Node References | Update links during insertion and deletion |
+| Incorrect Tree Traversal | Follow the correct traversal sequence |
+| AVL Imbalance | Apply appropriate rotations |
+| Hash Collision | Use collision resolution techniques |
+| ValueError | Validate user input |
+| AttributeError | Check object and node references |
+| IndentationError | Maintain proper Python indentation |
+
+---
+
+# 12. Conclusion
+
+The Data Structures and Algorithms Laboratory provided practical experience in understanding and implementing important data structures and algorithmic techniques using Python.
+
+Starting from recursion and basic searching algorithms, the experiments gradually progressed towards advanced sorting techniques, linked lists, stacks, queues, binary trees, Binary Search Trees, AVL trees, and hashing.
+
+These implementations helped develop a better understanding of how data is stored, accessed, modified, searched, sorted, and organized efficiently.
+
+The laboratory work also strengthened programming fundamentals, logical reasoning, debugging skills, and the ability to translate algorithmic concepts into working Python programs.
+
+This repository serves as a structured collection of the implementations and practical work completed throughout the **23CSE203 – Data Structures and Algorithms Laboratory**.
+
+---
+
+# 13. Acknowledgement
+
+I sincerely thank **Dr. Rajkumar Batchu**, Assistant Professor, School of Computing, Amrita Vishwa Vidyapeetham, for the guidance and support provided throughout the Data Structures and Algorithms Laboratory.
+
+I also acknowledge the learning opportunities provided by the laboratory sessions, which helped me understand the practical implementation of data structures and algorithms.
+
+---
+
+## Author
 
 **JASHTI HEMENDRA**
 
-**Roll No:** AV.SC.U4CSE25116
+B.Tech – Computer Science and Engineering  
+2nd Year | Semester 3 | CSE-B  
+Amrita Vishwa Vidyapeetham
 
-**CSE-B | 2nd Year | 3rd Semester**
+**Course:** Data Structures and Algorithms  
+**Course Code:** 23CSE203
 
 ---
 
-> This repository contains academic laboratory work completed as part of the Data Structures and Algorithms course.
+<p align="center">
+  <strong>Learning Data Structures. Understanding Algorithms. Building Problem-Solving Skills.</strong>
+</p>
